@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <section class="fullpage-section top-section">
+      <div class="top-main-content">
+        <h1 class="top-main-content-title">Jamie Leask</h1>
+      </div>
+      <nav class="top-footer">
+        <ul class="nav">
+          <li class="nav-item">About</li>
+          <li class="nav-item">|</li>
+          <li class="nav-item">Work</li>
+          <li class="nav-item">|</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+      </nav>
+    </section>
+    <section class="fullpage-section mid-section">
+      <div class="mid-topleft-div">
+        <div class="mid-left-wrapper">
+          <div class="mid-left-content">
+            <h1>About</h1>
+          </div>
+        </div>
+      </div>
+      <div class="mid-right-wrapper">
+        <div class="paragraph intro-1">
+          <p class="intro-p header-p">I am a Full Stack web developer</p>
+          <p class="intro-p">A few lines of python code for a simple stop watch app was all it took to reel me into the developer world..The feeling of producing useful working code is both extremely invigorating and addicting to me.</p>
+        </div>
+        <div class="paragraph intro-2">
+          <p class="intro-p header-p">Direction</p>
+          <p class="intro-p">Recently i joined a full stack coding bootcamp. A vigorous program that both fulfills my hunger to learn and challenges me everyday. The combination of a visually stimulating and usable UI mixed with a powerful and elegant backend is a symphony to behold and one i plan to for as long as i can...</p>
+        </div>
+        <div class="paragraph goals-1">
+          <p class="intro-p header-p">Goals</p>
+          <p class="intro-p">I am of the mind set to both learn: from the many incredibly gifted and intelligent people that litter this community and to teach: pass along and give others any information that i can to help them progress, and thus help progress our fields ecosystem</p>
+        </div>
+      </div>
+    </section>
+    <section class="fullpage-section bottom-section">
+      <div class="bottom-top-div">
+        <div class="bottom-left-wrapper">
+          <div class="bottom-left-content">
+            <h1>Work</h1>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-right-wrapper">
+        <div class="apps apps-next" id="next">
+          <p class="header-p app-title"><a class="app-link">Next Flick App</a><i class="fa fa-film"></i></p>
+        </div>
+        <div class="apps-fire apps" id="firewall">
+          <p class="header-p app-title"><a class="app-link">Firewall Penitentiary</a><i class="fa fa-gamepad" aria-hidden="true"></i></p>
+        </div>
+        <div class="apps-trivia apps" id="trivia">
+          <p class="header-p app-title"><a class="app-link">Sports Legends Trivia</a><i class="fa fa-futbol-o" aria-hidden="true"></i></p>
+        </div>
+      </div>
+    </section>
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <section id="modal-next" class="modal modal-style">
+      <div class="modal-body">
+        <p class="header-p modal-title">Next Flick</p>
+        <p class="modal-description">Spend to much time deciding what movies to watch? Next flick will reduce that time greatly. Make an account, and customize your settings to view more accurate results.</p>
+        <p><a class="modal-github" href="https://github.com/rjleask/next-flick">View Github Page</a></p>
+        <p><a class="modal-app" href="https://secure-dawn-11382.herokuapp.com/">View App</a></p>
+        <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
+      </div>
+    </section>
+    <!-- end of modal -->
+    <!-- Modal -->
+    <section id="modal-firewall" class="modal modal-style">
+      <div class="modal-body">
+        <p class="header-p modal-title">Firewall Penitentiary</p>
+        <p class="modal-description">Futuristic themed game that combinds football and tron</p>
+        <p><a class="modal-github" href="https://github.com/rjleask/firewall-penitentiary-sp">View Github Page</a></p>
+        <p><a class="modal-app" href="https://rjleask.github.io/firewall-penitentiary-sp/">View App</a></p>
+        <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
+      </div>
+    </section>
+    <!-- Modal -->
+    <section id="modal-trivia" class="modal modal-style">
+      <div class="modal-body">
+        <p class="header-p modal-title">Sports Legends Trivia</p>
+        <p class="modal-description">Ever been to a party/gathering and everyone looks at you funny because you don't know who babe ruth is? Better view this to avoid awkward silences.</p>
+        <p><a class="modal-github" href="https://github.com/rjleask/TriviaGame">View Github Page</a></p>
+        <p><a class="modal-app" href="https://rjleask.github.io/TriviaGame/trivia.html">View App</a></p>
+        <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
+      </div>
+    </section>
+    <!-- end of modal -->
+    <!-- end of modal -->
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  var midTopleftDiv = $('.mid-topleft-div');
+  var bottomTopDiv = $('.bottom-top-div');
+  $(document).scroll(function() {
+    midTopleftDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
+    bottomTopDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
+  });
+  var imageUrl;
+  // modal
+  $(".app-link").on("click", function() {
+    var modalId = $(this).parent().parent().attr('id');
+    console.log(modalId);
+    $("#modal-" + modalId).modal({ show: true });
+  })
+
+  // toggle fade background image and paragraph text on mouse enter and leave
+  $(".apps").on({
+    mouseenter: function() {
+      imageUrl = getBackgroundImageUrl($(this).attr("id"));
+      $(this).children("p").css('opacity', '1');
+      $(this).css("background-image", "linear-gradient(to bottom, rgba(230, 230, 230, 1), rgba(230, 230, 230, 1)),url(" + imageUrl + ")");
+    },
+    mouseleave: function() {
+      $(this).children("p").css('opacity', '0.1');
+      $(this).css("background-image", "linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),url(" + imageUrl + ")");
+    }
+  });
+
+  function getBackgroundImageUrl(id) {
+    switch (id) {
+      case "next":
+        return "nextflick.png"
+        break;
+      case "firewall":
+        return "firewall.png"
+        break;
+      case "trivia":
+        return "trivia.png"
+        break;
+    }
+  }
+  </script>
+</body>
+
+</html>

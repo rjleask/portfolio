@@ -1,0 +1,283 @@
+button:hover {
+cursor: pointer;
+}
+.top-section {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(215, 215, 215, 0.7), rgba(0, 0, 0, 0.9)),
+  url(fenwaypark.jpg);
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 600;
+  padding: 10px 0;
+  line-height: normal;
+}
+
+.top-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.top-main-content {
+  text-align: center;
+  width: 100%;
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.top-footer {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-item {
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.nav {
+  justify-content: center;
+  width: 100%;
+  padding: 40px 10px;
+  color: red;
+}
+
+.top-main-content-title {
+  font-size: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(40, end),
+  blink-caret .15s step-end infinite;
+}
+
+
+
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 500px;
+  }
+}
+
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+.mid-section {
+  min-height: 662px;
+  position: relative;
+}
+
+.mid-topleft-div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.mid-left-wrapper {
+  width: 50%;
+  height: 662px;
+}
+
+.mid-left-content {
+  text-align: center;
+  height: 662px;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+  url(port.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mid-right-wrapper {
+  position: relative;
+  background: white;
+  width: 50%;
+  left: 50%;
+}
+
+.intro-1 {
+  padding-top: 90px;
+}
+
+.paragraph {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.header-p {
+  font-weight: bold;
+}
+
+
+
+/**/
+
+
+/**/
+
+.bottom-section {
+  min-height: 662px;
+  background: white;
+  position: relative;
+}
+
+.bottom-top-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.bottom-left-wrapper {
+  height: 662px;
+  width: 50%;
+}
+
+.bottom-right-wrapper {
+  position: relative;
+  background: #f1efef;
+  width: 50%;
+  left: 50%;
+}
+
+.bottom-left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 662px;
+  background: black;
+}
+
+.bottom-left-content>h1 {
+  color: white;
+}
+
+.apps {
+  background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
+  url(nextflick.png);
+  background-size: contain;
+  background-size: 80% 80%;
+  padding: 30% 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.apps-fire {
+  background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
+  url(firewall.png);
+}
+
+.apps-trivia {
+  background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
+  url(trivia.png);
+}
+
+.app-title {
+  text-align: center;
+  font-size: 37px;
+  color: black;
+  opacity: 0.1;
+}
+
+
+
+/*underline animation*/
+
+.app-title>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.app-title>a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.app-title>a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.app-title>a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.app-title:hover {
+  -webkit-transform: scale(1.25);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25);
+}
+
+/*modal container*/
+.modal-style{
+	width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  /*/*background: #fdf04a;**/
+  border-radius: 1%;
+  background-image: linear-gradient(to right, rgba(0, 0,0 , 1), rgba(220, 220, 220, 0.3), rgba(0, 0, 0, 1));
+
+}
+.modal-body{
+	top: 12%;
+	padding:0 27%;
+}
+.modal-title{
+	font-size: 45px;
+	color: #8cff8c;
+}
+.modal-description{
+	color:white;
+}
+.modal-github,.modal-app{
+	font-weight: bold;
+	color:white;
+	font-size: 25px;
+}
+#close-modal{
+	background: #8cff8c;
+}
