@@ -1,10 +1,13 @@
 button:hover {
 cursor: pointer;
 }
+a{
+  color:inherit;
+}
 .top-section {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(215, 215, 215, 0.7), rgba(0, 0, 0, 0.9)),
-  url(fenwaypark.jpg);
+  url(../images/fenwaypark.jpg);
   display: flex;
   align-items: center;
 }
@@ -39,15 +42,19 @@ h1 {
 }
 
 .nav-item {
+  color:#8484b3;
   padding: 0 10px;
-  font-size: 18px;
+  font-size: 26px;
+}
+.about-item{
+  color:black;
 }
 
 .nav {
   justify-content: center;
   width: 100%;
   padding: 40px 10px;
-  color: red;
+  color: #860505;
 }
 
 .top-main-content-title {
@@ -73,8 +80,6 @@ h1 {
   }
 }
 
-
-
 /**/
 
 
@@ -82,13 +87,13 @@ h1 {
 
 
 /**/
-
-.mid-section {
-  min-height: 662px;
+.fullpage-section{
+	min-height: 662px;
   position: relative;
 }
 
-.mid-topleft-div {
+
+.about-outter-div {
   position: absolute;
   left: 0;
   top: 0;
@@ -96,22 +101,26 @@ h1 {
   right: 0;
 }
 
-.mid-left-wrapper {
+.about-left-wrapper {
   width: 50%;
   height: 662px;
 }
 
-.mid-left-content {
-  text-align: center;
+.about-left-content {
+  display: flex;
   height: 662px;
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
-  url(port.jpg);
+  background-image: linear-gradient(to bottom, rgba(122, 142, 167, 0.5), rgba(122, 142, 167, 0.5)),
+  url(../images/port.jpg);
+  justify-content: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.about-left-content > .nav-items{
+  color:black;
+}
 
-.mid-right-wrapper {
+.about-right-wrapper {
   position: relative;
   background: white;
   width: 50%;
@@ -131,20 +140,19 @@ h1 {
   font-weight: bold;
 }
 
-
-
 /**/
 
 
 /**/
 
-.bottom-section {
-  min-height: 662px;
+
+/**/
+
+.work-section {
   background: white;
-  position: relative;
 }
 
-.bottom-top-div {
+.work-outter-div {
   position: absolute;
   top: 0;
   right: 0;
@@ -152,19 +160,19 @@ h1 {
   bottom: 0;
 }
 
-.bottom-left-wrapper {
+.work-left-wrapper {
   height: 662px;
   width: 50%;
 }
 
-.bottom-right-wrapper {
+.work-right-wrapper {
   position: relative;
   background: #f1efef;
   width: 50%;
   left: 50%;
 }
 
-.bottom-left-content {
+.work-left-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,13 +180,66 @@ h1 {
   background: black;
 }
 
-.bottom-left-content>h1 {
+.work-left-content>h1 {
   color: white;
+}
+/**/
+
+
+/**/
+
+
+/**/
+.contact-section {
+  background: white;
+}
+
+.contact-outter-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.contact-left-wrapper {
+  height: 662px;
+  width: 50%;
+}
+
+.contact-right-wrapper {
+  position: relative;
+  background: #f1efef;
+  width: 50%;
+  left: 50%;
+  background-image: linear-gradient(to right, rgba(255,255, 255, 0.5),rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5)),
+  url(../images/contact.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 662px;
+}
+
+.contact-left-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 662px;
+}
+.contact-info{
+  width: 100%;
+  text-align: center;
+}
+.contact-info > .contact-header{
+  font-size:30px;
+}
+.contact-left-content>h1 {
+  color: black;
 }
 
 .apps {
   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
-  url(nextflick.png);
+  url(../images/nextflick.png);
   background-size: contain;
   background-size: 80% 80%;
   padding: 30% 5%;
@@ -188,12 +249,12 @@ h1 {
 
 .apps-fire {
   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
-  url(firewall.png);
+  url(../images/firewall.png);
 }
 
 .apps-trivia {
   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
-  url(trivia.png);
+  url(../images/trivia.png);
 }
 
 .app-title {
@@ -241,13 +302,9 @@ h1 {
 
 .app-title:hover {
   -webkit-transform: scale(1.25);
-  /* Safari and Chrome */
   -moz-transform: scale(1.25);
-  /* Firefox */
   -ms-transform: scale(1.25);
-  /* IE 9 */
   -o-transform: scale(1.25);
-  /* Opera */
   transform: scale(1.25);
 }
 
@@ -257,7 +314,6 @@ h1 {
   height: 100vh;
   text-align: center;
   margin: 0 auto;
-  /*/*background: #fdf04a;**/
   border-radius: 1%;
   background-image: linear-gradient(to right, rgba(0, 0,0 , 1), rgba(220, 220, 220, 0.3), rgba(0, 0, 0, 1));
 
@@ -278,6 +334,51 @@ h1 {
 	color:white;
 	font-size: 25px;
 }
+.fa{
+ font-size: 50px;
+ padding:0 5px;
+ cursor: pointer;
+}
 #close-modal{
 	background: #8cff8c;
+}
+
+/*media queries*/
+
+@media (max-width: 1050px){
+  .fullpage-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tops{
+    position: relative;
+    width: 100%;
+  }
+  .left-wrappers{
+    width: 100%;
+  }
+  .right-wrappers{
+    width: 100%;
+    left: 0;
+  }
+  .left-content{
+    background-position: center;
+  }
+}
+@media (max-width: 620px){
+  .paragraph {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .modal-body{
+    padding:0 15%;
+  }
+}
+@media (max-width:340px){
+  .nav-item{
+    padding:0 5px;
+  }
+  .app-title{
+    font-size: 27px;
+  }
 }

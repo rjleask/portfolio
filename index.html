@@ -3,10 +3,11 @@
 
 <head>
   <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -17,23 +18,33 @@
       </div>
       <nav class="top-footer">
         <ul class="nav">
-          <li class="nav-item">About</li>
+          <li class="nav-item"><a href="#about">About</a></li>
           <li class="nav-item">|</li>
-          <li class="nav-item">Work</li>
+          <li class="nav-item"><a href="#work">Work</a></li>
           <li class="nav-item">|</li>
-          <li class="nav-item">Contact</li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </section>
-    <section class="fullpage-section mid-section">
-      <div class="mid-topleft-div">
-        <div class="mid-left-wrapper">
-          <div class="mid-left-content">
+    <section class="fullpage-section about-section">
+      <div class="about-outter-div tops">
+        <a name="about"></a>
+        <div class="about-left-wrapper left-wrappers">
+          <div class="about-left-content left-content">
             <h1>About</h1>
+            <nav class="top-footer">
+              <ul class="nav">
+                <li class="nav-item about-item"><a href="#about">About</a></li>
+                <li class="nav-item about-item">|</li>
+                <li class="nav-item about-item"><a href="#work">Work</a></li>
+                <li class="nav-item about-item">|</li>
+                <li class="nav-item about-item"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-      <div class="mid-right-wrapper">
+      <div class="about-right-wrapper right-wrappers">
         <div class="paragraph intro-1">
           <p class="intro-p header-p">I am a Full Stack web developer</p>
           <p class="intro-p">A few lines of python code for a simple stop watch app was all it took to reel me into the developer world..The feeling of producing useful working code is both extremely invigorating and addicting to me.</p>
@@ -48,15 +59,25 @@
         </div>
       </div>
     </section>
-    <section class="fullpage-section bottom-section">
-      <div class="bottom-top-div">
-        <div class="bottom-left-wrapper">
-          <div class="bottom-left-content">
+    <section class="fullpage-section work-section">
+      <div class="work-outter-div tops">
+        <a name="work"></a>
+        <div class="work-left-wrapper left-wrappers">
+          <div class="work-left-content left-content">
             <h1>Work</h1>
+            <nav class="top-footer">
+              <ul class="nav">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="#work">Work</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-      <div class="bottom-right-wrapper">
+      <div class="work-right-wrapper right-wrappers">
         <div class="apps apps-next" id="next">
           <p class="header-p app-title"><a class="app-link">Next Flick App</a><i class="fa fa-film"></i></p>
         </div>
@@ -68,7 +89,33 @@
         </div>
       </div>
     </section>
-    <!-- Button trigger modal -->
+    <section class="fullpage-section contact-section">
+      <div class="contact-outter-div tops">
+        <a name="contact"></a>
+        <div class="contact-left-wrapper left-wrappers">
+          <div class="contact-left-content">
+            <h1>Contact</h1>
+            <nav class="top-footer">
+              <ul class="nav">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="#work">Work</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="contact-info">
+              <p class="contact-header">Lets make something great</p>
+              <p>Available for part-time and full-time employment</p>
+              <p>Join me!</p>
+              <span><a href="https://github.com/rjleask" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+              <span><a href="https://www.linkedin.com/in/jamleask/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></a></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right-wrapper right-wrappers">
+    </section>
     <!-- Modal -->
     <section id="modal-next" class="modal modal-style">
       <div class="modal-body">
@@ -101,53 +148,60 @@
       </div>
     </section>
     <!-- end of modal -->
-    <!-- end of modal -->
-  </div>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  var midTopleftDiv = $('.mid-topleft-div');
-  var bottomTopDiv = $('.bottom-top-div');
-  $(document).scroll(function() {
-    midTopleftDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
-    bottomTopDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
-  });
-  var imageUrl;
-  // modal
-  $(".app-link").on("click", function() {
-    var modalId = $(this).parent().parent().attr('id');
-    console.log(modalId);
-    $("#modal-" + modalId).modal({ show: true });
-  })
+    <!-- end of all modals-->
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var aboutOutterDiv = $('.about-outter-div');
+    var workOutterDiv = $('.work-outter-div');
+    var contactOuterDiv = $('.contact-outter-div');
 
-  // toggle fade background image and paragraph text on mouse enter and leave
-  $(".apps").on({
-    mouseenter: function() {
-      imageUrl = getBackgroundImageUrl($(this).attr("id"));
-      $(this).children("p").css('opacity', '1');
-      $(this).css("background-image", "linear-gradient(to bottom, rgba(230, 230, 230, 1), rgba(230, 230, 230, 1)),url(" + imageUrl + ")");
-    },
-    mouseleave: function() {
-      $(this).children("p").css('opacity', '0.1');
-      $(this).css("background-image", "linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),url(" + imageUrl + ")");
-    }
-  });
 
-  function getBackgroundImageUrl(id) {
-    switch (id) {
-      case "next":
-        return "nextflick.png"
-        break;
-      case "firewall":
-        return "firewall.png"
-        break;
-      case "trivia":
-        return "trivia.png"
-        break;
+    if ($(window).width() < 1050) {
+      console.log('Less than 1050');
+    } else {
+      $(document).scroll(function() {
+        aboutOutterDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
+        workOutterDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
+        contactOuterDiv.css({ position: $(this).scrollTop() > 2765 ? "fixed" : "absolute" });
+      });
     }
-  }
-  </script>
+    var imageUrl;
+    // modal
+    $(".app-link").on("click", function() {
+      var modalId = $(this).parent().parent().attr('id');
+      $("#modal-" + modalId).modal({ show: true });
+    })
+
+    // toggle fade background image and paragraph text on mouse enter and leave
+    $(".apps").on({
+      mouseenter: function() {
+        imageUrl = getBackgroundImageUrl($(this).attr("id"));
+        $(this).children("p").css('opacity', '1');
+        $(this).css("background-image", "linear-gradient(to bottom, rgba(230, 230, 230, 1), rgba(230, 230, 230, 1)),url(" + imageUrl + ")");
+      },
+      mouseleave: function() {
+        $(this).children("p").css('opacity', '0.1');
+        $(this).css("background-image", "linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),url(" + imageUrl + ")");
+      }
+    });
+
+    function getBackgroundImageUrl(id) {
+      switch (id) {
+        case "next":
+          return "assets/images/nextflick.png"
+          break;
+        case "firewall":
+          return "assets/images/firewall.png"
+          break;
+        case "trivia":
+          return "assets/images/trivia.png"
+          break;
+      }
+    }
+    </script>
 </body>
 
 </html>
