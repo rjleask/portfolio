@@ -156,18 +156,27 @@
     <script type="text/javascript">
     var aboutOutterDiv = $('.about-outter-div');
     var workOutterDiv = $('.work-outter-div');
-    var contactOuterDiv = $('.contact-outter-div');
+    var contactOutterDiv = $('.contact-outter-div');
 
-
-    if ($(window).width() < 1050) {
-      console.log('Less than 1050');
-    } else {
-      $(document).scroll(function() {
+    $(window).on('resize', function() {
+      var win = $(this); //this = window
+      if (win.width() >= 1050) {
         aboutOutterDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
-        workOutterDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
-        contactOuterDiv.css({ position: $(this).scrollTop() > 2765 ? "fixed" : "absolute" });
-      });
-    }
+          workOutterDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
+          contactOutterDiv.css({ position: $(this).scrollTop() > 2765 ? "fixed" : "absolute" });
+        $(document).scroll(function() {
+          aboutOutterDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
+          workOutterDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
+          contactOutterDiv.css({ position: $(this).scrollTop() > 2765 ? "fixed" : "absolute" });
+        })
+      } else {
+        // aboutOutterDiv.css("position","absolute");
+        // workOutterDiv.css("position","absolute");
+        // contactOutterDiv.css("position","absolute");
+      }
+
+    });
+
     var imageUrl;
     // modal
     $(".app-link").on("click", function() {
