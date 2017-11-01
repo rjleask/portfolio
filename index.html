@@ -17,7 +17,7 @@
         <h1 class="top-main-content-title">Jamie Leask</h1>
       </div>
       <nav class="top-footer">
-        <ul class="nav">
+        <ul class="nav justify-content-center">
           <li class="nav-item"><a href="#about">About</a></li>
           <li class="nav-item">|</li>
           <li class="nav-item"><a href="#work">Work</a></li>
@@ -160,12 +160,12 @@
     var workOutterDiv = $('.work-outter-div');
     var contactOuterDiv = $('.contact-outter-div');
 
-        // scroll vertical function
-        $(document).scroll(function() {
-          aboutOutterDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
-          workOutterDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
-          contactOuterDiv.css({ position: $(this).scrollTop() > 2765 ? "fixed" : "absolute" });
-        }); 
+    // scroll vertical function
+    $(document).scroll(function() {
+      aboutOutterDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
+      workOutterDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
+      contactOuterDiv.css({ position: $(this).scrollTop() > 2765 ? "fixed" : "absolute" });
+    });
 
     var imageUrl;
     // modal

@@ -54,19 +54,19 @@ h1 {
 }
 
 .nav {
-  justify-content: center;
-  width: 100%;
+  /*justify-content: center;*/
+  /*width: 100%;*/
   padding: 40px 10px;
   color: #860505;
 }
 
 .top-main-content-title {
   font-size: 60px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 5s steps(40, end),
-  blink-caret .15s step-end infinite;
+  /*animation: typing 5s steps(40, end),
+  blink-caret .15s step-end infinite;*/
 }
 
 
@@ -75,14 +75,14 @@ h1 {
 
 /* The typing effect */
 
-@keyframes typing {
+/*@keyframes typing {
   from {
     width: 0
   }
   to {
     width: 500px;
   }
-}
+}*/
 
 
 /**/
@@ -421,5 +421,8 @@ h1 {
   }
   .app-title {
     font-size: 27px;
+  }
+  .nav{
+    display: none;
   }
 }
