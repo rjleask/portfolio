@@ -350,6 +350,10 @@ h1 {
     display: flex;
     flex-wrap: wrap;
   }
+.contact-outter-div.tops{
+  position: relative !important;
+}
+
   .tops{
     position: relative;
     width: 100%;
