@@ -354,6 +354,9 @@ h1 {
     display: flex;
     flex-wrap: wrap;
   }
+  .work-outter-div.tops{
+    position: relative !important;
+  }
 .contact-outter-div.tops{
   position: relative !important;
 }
