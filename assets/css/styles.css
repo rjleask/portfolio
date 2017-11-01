@@ -257,7 +257,7 @@ h1 {
 
 .apps {
   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
-  url(../images/nextflick.PNG);
+  url(../images/nextflick.png);
   background-size: contain;
   background-size: 80% 80%;
   padding: 30% 5%;
@@ -267,12 +267,12 @@ h1 {
 
 .apps-fire {
   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
-  url(../images/firewall.PNG);
+  url(../images/firewall.png);
 }
 
 .apps-trivia {
   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
-  url(../images/trivia.PNG);
+  url(../images/trivia.png);
 }
 
 .app-title {
