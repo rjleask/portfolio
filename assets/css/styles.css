@@ -413,6 +413,9 @@ h1 {
   .modal-body {
     padding: 0 15%;
   }
+  .nav{
+    display: none;
+  }
 }
 
 @media (max-width:340px) {
@@ -422,7 +425,5 @@ h1 {
   .app-title {
     font-size: 27px;
   }
-  .nav{
-    display: none;
-  }
+  
 }
