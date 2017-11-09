@@ -109,12 +109,12 @@ h1 {
 
 .about-left-wrapper {
   width: 50%;
-  height: 662px;
+  height: 100vh;
 }
 
 .about-left-content {
   display: flex;
-  height: 662px;
+  height: 100vh;
   background-image: linear-gradient(to bottom, rgba(122, 142, 167, 0.5), rgba(122, 142, 167, 0.5)),
   url(../images/port.jpg);
   justify-content: center;
@@ -168,7 +168,7 @@ h1 {
 }
 
 .work-left-wrapper {
-  height: 662px;
+  height: 100vh;
   width: 50%;
 }
 
@@ -183,7 +183,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 662px;
+  height: 100vh;
   background: black;
 }
 
@@ -213,7 +213,7 @@ h1 {
 }
 
 .contact-left-wrapper {
-  height: 662px;
+  height: 100vh;
   width: 50%;
 }
 
@@ -227,14 +227,14 @@ h1 {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 662px;
+  height: 100vh;
 }
 
 .contact-left-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 662px;
+  height: 100vh;
 }
 
 .contact-info {
@@ -413,7 +413,7 @@ h1 {
     padding: 0 15%;
   }
   .nav{
-    display: none;
+    /*display: none;*/
   }
 }
 
