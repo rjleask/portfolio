@@ -274,6 +274,10 @@ h1 {
   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
   url(../images/trivia.png);
 }
+.apps-guess{
+  background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0), rgba(230, 230, 230, 0)),
+  url(../images/guessWho.png);
+}
 
 .app-title {
   text-align: center;
