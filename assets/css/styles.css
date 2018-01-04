@@ -5,6 +5,9 @@ button:hover {
 a {
   color: inherit;
 }
+a:hover{
+  text-decoration: none;
+}
 
 .top-section {
   height: 100vh;
