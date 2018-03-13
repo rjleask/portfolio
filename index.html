@@ -81,6 +81,9 @@
         <div class="apps apps-next" id="next">
           <p class="header-p app-title"><a class="app-link">Next Flick App</a><i class="fa fa-film"></i></p>
         </div>
+        <div class="apps-marvel apps" id="marvel">
+          <p class="header-p app-title"><a class="app-link">War The Card Game</a><i class="fa fa-gamepad" aria-hidden="true"></i></p>
+        </div>
         <div class="apps-guess apps" id="guess">
           <p class="header-p app-title"><a class="app-link">Pokemon Guess Who</a><i class="fa fa-gamepad" aria-hidden="true"></i></p>
         </div>
@@ -132,6 +135,17 @@
       </div>
     </section>
     <!-- end of modal -->
+     <!-- Modal -->    
+    <section id="modal-marvel" class="modal modal-style">
+      <div class="modal-body">
+        <p class="header-p modal-title">War The Card Game</p>
+        <p class="modal-description">War the card game using react and marvel comics api</p>
+        <p><a class="modal-github" href="https://github.com/rjleask/marvel-project" target="_blank">View Github Page</a></p>
+        <p><a class="modal-app" href="https://rjleask.github.io/marvel-project/#/" target="_blank">View App</a></p>
+        <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
+      </div>
+    </section>
+    <!-- end of modal -->    
      <!-- Modal -->
      <section id="modal-guess" class="modal modal-style">
       <div class="modal-body">
@@ -178,7 +192,7 @@
     $(document).scroll(function() {
       aboutOutterDiv.css({ position: $(this).scrollTop() > 662 ? "fixed" : "absolute" });
       workOutterDiv.css({ position: $(this).scrollTop() > 1324 ? "fixed" : "absolute" });
-      contactOuterDiv.css({ position: $(this).scrollTop() > 3280 ? "fixed" : "absolute" });
+      contactOuterDiv.css({ position: $(this).scrollTop() > 3800 ? "fixed" : "absolute" });
     });
 
     var imageUrl;
@@ -216,8 +230,8 @@
     function getBackgroundImageUrl(id) {
       switch (id) {
         case "guess":
-        return "assets/images/guessWho.PNG"
-        break;
+          return "assets/images/guessWho.PNG"
+          break;
         case "next":
           return "assets/images/nextflick.png"
           break;
@@ -226,6 +240,9 @@
           break;
         case "trivia":
           return "assets/images/trivia.png"
+          break;
+        case "marvel":
+          return "assets/images/marvel.png"
           break;
       }
     }
